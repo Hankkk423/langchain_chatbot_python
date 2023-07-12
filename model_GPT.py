@@ -54,6 +54,6 @@ def gpt_response(msg):
     tag = 'gpt'
     return answer, tag
 
-tanswer, ttage = gpt_response('when od you open?')
+tanswer, ttage = gpt_response('Can I go on the weekend?')
 print('test: ', tanswer, type(tanswer))
 
