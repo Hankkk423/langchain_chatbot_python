@@ -1,0 +1,6 @@
+# and rename this file to constants.py
+# Replace with your own OpenAI API Key https://platform.openai.com/account/api-keys
+# Replace data folder path with your folder path
+
+OPENAI_APIKEY = "<your OpenAI API key>"
+DATA_DIRECTORY_PATH = "<path/to/your/directory/>"
