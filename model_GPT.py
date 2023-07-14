@@ -13,7 +13,7 @@ data_directory_path = constants.DATA_DIRECTORY_PATH
 
 
 ## ----- Models ----- ##
-llm = OpenAI(openai_api_key=openai_apikey, temperature=0.9)
+llm = OpenAI(openai_api_key=openai_apikey, temperature=0.6)
 #print(llm.predict("What would be a good company name for a company that makes colorful socks?"))
 # llm = ChatOpenAI(temperature=0.9, model="gpt-3.5-turbo-0613", openai_api_key="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")
 
@@ -37,7 +37,7 @@ split_docs = splitter.split_documents(docs)
 prompt_template = """Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
 {context}
 Question: {question}
-Answer in a warm tone:"""
+Please give me a short response with some emojis and Answer in a warm tone:"""
 PROMPT = PromptTemplate(
     template=prompt_template, input_variables=["context", "question"]
 )
