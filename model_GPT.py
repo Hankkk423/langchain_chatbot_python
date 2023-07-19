@@ -15,12 +15,11 @@ data_directory_path = constants.DATA_DIRECTORY_PATH
 ## ----- Models ----- ##
 llm = OpenAI(openai_api_key=openai_apikey, temperature=0.6)
 #print(llm.predict("What would be a good company name for a company that makes colorful socks?"))
-# llm = ChatOpenAI(temperature=0.9, model="gpt-3.5-turbo-0613", openai_api_key="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")
+# llm = ChatOpenAI(temperature=0.9, model="gpt-3.5-turbo-0613", openai_api_key=openai_apikey)
 
 
 ## ----- Load Documents ----- ##
 # Load Notion page as a markdownfile file
-
 loader = DirectoryLoader(data_directory_path)
 docs = loader.load()
 print(len(docs))
