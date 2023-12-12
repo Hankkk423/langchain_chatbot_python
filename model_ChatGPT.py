@@ -15,7 +15,7 @@ chat_model = 'gpt-3.5-turbo-16k'
 
 
 ## ----- Models ----- ##
-llm = ChatOpenAI(openai_api_key=openai_apikey, temperature=0.4, model=chat_model)
+llm = ChatOpenAI(openai_api_key=openai_apikey, temperature=0.6, model=chat_model)
 # print(llm.predict("What would be a good company name for a company that makes colorful socks?"))
 
 
