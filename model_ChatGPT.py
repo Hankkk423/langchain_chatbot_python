@@ -67,12 +67,12 @@ PROMPT = PromptTemplate(
 
 
 ## ----- function ----- ##
-def gpt_response(msg):
+def chatgpt_response(msg):
     prompt = PROMPT.format(context=all_split_texts, question=msg)
     answer = llm.predict(prompt)
     tag = 'gpt'
     return answer, tag
 
 
-tanswer, ttage = gpt_response('what is your number?')
+tanswer, ttage = chatgpt_response('what is your number?')
 print('test: ', tanswer, type(tanswer))
