@@ -13,9 +13,8 @@ data_directory_path = constants.DATA_DIRECTORY_PATH
 
 
 ## ----- Models ----- ##
-llm = OpenAI(openai_api_key=openai_apikey, temperature=0.6)
+llm = OpenAI(openai_api_key=openai_apikey, temperature=0.6)  # Default Model: text-davinci-003
 #print(llm.predict("What would be a good company name for a company that makes colorful socks?"))
-# llm = ChatOpenAI(temperature=0.9, model="gpt-3.5-turbo-0613", openai_api_key=openai_apikey)
 
 
 ## ----- Load Documents ----- ##
@@ -55,4 +54,3 @@ def gpt_response(msg):
 
 tanswer, ttage = gpt_response('Can I go on the weekend?')
 print('test: ', tanswer, type(tanswer))
-
