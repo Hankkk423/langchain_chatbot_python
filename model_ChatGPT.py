@@ -60,7 +60,7 @@ print('Total tokens:', total_tokens)
 prompt_template = """Use all of the following information to answer the question at the end. Each of sentence in the following has unique information, using "" to seperate the sentences. If you can't find the answer based on the following information, just say that you don't know and you don't have the information, don't try to make up an answer.
 {context}
 Question: {question}
-Please give me a short response with some emojis and Answer in a warm tone:"""
+Please give me a short Answer in a warm tone with some emojis:"""
 PROMPT = PromptTemplate(
     template=prompt_template, input_variables=["context", "question"]
 )
