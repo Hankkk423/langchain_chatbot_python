@@ -1,5 +1,6 @@
 # from langchain.llms import OpenAI  ## for the OpenAI model
-from langchain.chat_models import ChatOpenAI  ## for the ChatOpenAI model
+# from langchain.chat_models import ChatOpenAI  ## for the ChatOpenAI model
+from langchain_openai import ChatOpenAI  ## For the ChatOpenAI model
 from langchain.document_loaders import DirectoryLoader  ## for loading documents
 from langchain.text_splitter import CharacterTextSplitter  ## for splitting documents into "chuck_size"
 from langchain.docstore.document import Document  ## for splitting documents into "chuck_size"
